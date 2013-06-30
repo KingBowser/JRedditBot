@@ -1,0 +1,3 @@
+[submodule "jReddit"]
+	path = jReddit
+	url = https://github.com/hormigas/jReddit.git

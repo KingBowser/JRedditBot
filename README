@@ -1,1 +1,8 @@
-This file was created by IntelliJ IDEA 12.1.3 for binding GitHub repository
+JRedditBot is a modular event-based reddit bot.
+JRedditBot simply provides a middleman work system between JReddit and JRB plugins.
+
+JRB manages an instance of EventBus and an instance of JReddit. It is designed to check for changes to specified userpages and subreddits.
+ Upon discovering changes - new posts or comments - it publishes an appropriate event to the EventBus.
+ Plugins may subscribe to events, and then act upon them.
+
+Adopters are expected to store the bot on a private machine, as the bot user pasword is stored (not transmitted) in a configuration.
